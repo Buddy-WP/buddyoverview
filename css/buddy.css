@@ -61,6 +61,7 @@
   
   .slides {
     text-align: left !important;
+    width: 90% !important;
   }
   
   .slides p:last-child {
@@ -81,6 +82,15 @@
     }
   } */
   
+  .slides section {
+    bottom: 0;
+    top: 0 !important;
+  }
+
+  .slides section .inner {
+    height: 100%;
+  }
+
   .slides .inner-left {
     width: 72%;
   }
@@ -146,8 +156,8 @@
   
   .photobg {
     width: 100%;
-    height: 70vh;
-    background-repeat: no-no-repeat;
+    height: 100%;
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     filter: grayscale(1);
@@ -165,20 +175,24 @@
   
   .photobg-inner {
     position: relative;
+    width: 100%;
+    height: 60vh;
   }
   
   .label {
     position: absolute;
-    bottom: 60px;
-    left: -80px;
+    bottom: 0;
+    top: auto;
+    right: 40px;
     font-size: var(--font20) !important;
     color: var(--white-color);
     font-weight: var(--weight700) !important;
     padding: 25px !important;
+    display: inline-block;
     text-transform: none;
-    width: calc(100% - 50px) !important;
+    width: 290px !important;
     background: rgb(0,77,255);
-    border-radius: 6px;
+    border-radius: 4px;
     background: linear-gradient(90deg,rgba(26,134,253,1) 100%, rgba(0,77,255,1) 0%);
     transform: translateY(-50px);
     text-align: right !important;
